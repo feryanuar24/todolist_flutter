@@ -7,9 +7,9 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:902200913123:android:be3bf3ceffa0c29b19e9d6",
+        "mobilesdk_app_id": "1:902200913123:android:8120bf40912c70e419e9d6",
         "android_client_info": {
-          "package_name": "com.example.todolist_flutter"
+          "package_name": "com.feryanuar24.todolist_flutter"
         }
       },
       "oauth_client": [],

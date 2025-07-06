@@ -20,17 +20,17 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyA1w9wGunc75iapSXXSQ-H5KwgxZMvia6Y',
-    authDomain: 'todolist-flutter-7d3f8.firebaseapp.com',
-    projectId: 'todolist-flutter-7d3f8',
-    storageBucket: 'todolist-flutter-7d3f8.firebasestorage.app',
-    messagingSenderId: '902200913123',
-    appId: '1:902200913123:web:f6e503a752fc373919e9d6',
+    apiKey: "AIzaSyBwh1RfsBqzLtloe7oP-DmvO5Nimfi6bgA",
+    authDomain: "todolist-flutter-7d3f8.firebaseapp.com",
+    projectId: "todolist-flutter-7d3f8",
+    storageBucket: "todolist-flutter-7d3f8.firebasestorage.app",
+    messagingSenderId: "902200913123",
+    appId: "1:902200913123:web:f6e503a752fc373919e9d6",
   );
 
   static const FirebaseOptions android = FirebaseOptions(
     apiKey: 'AIzaSyA1w9wGunc75iapSXXSQ-H5KwgxZMvia6Y',
-    appId: '1:902200913123:android:be3bf3ceffa0c29b19e9d6',
+    appId: '1:902200913123:android:8120bf40912c70e419e9d6',
     messagingSenderId: '902200913123',
     projectId: 'todolist-flutter-7d3f8',
     storageBucket: 'todolist-flutter-7d3f8.firebasestorage.app',
