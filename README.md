@@ -203,7 +203,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Contact
 
-Fery Anuar - [feryanuar@gmail.com](mailto:feryanuar@gmail.com)
+Fery Anuar - [feryanuar24@gmail.com](mailto:feryanuar24@gmail.com)
 
 Project Link: [https://github.com/feryanuar24/todolist_flutter](https://github.com/feryanuar24/todolist_flutter)
 
