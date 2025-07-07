@@ -20,28 +20,79 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: "AIzaSyBwh1RfsBqzLtloe7oP-DmvO5Nimfi6bgA",
-    authDomain: "todolist-flutter-7d3f8.firebaseapp.com",
-    projectId: "todolist-flutter-7d3f8",
-    storageBucket: "todolist-flutter-7d3f8.firebasestorage.app",
-    messagingSenderId: "902200913123",
-    appId: "1:902200913123:web:f6e503a752fc373919e9d6",
+    apiKey: String.fromEnvironment(
+      'WEB_API_KEY',
+      defaultValue: 'your-web-api-key',
+    ),
+    authDomain: String.fromEnvironment(
+      'AUTH_DOMAIN',
+      defaultValue: 'todolist-flutter-7d3f8.firebaseapp.com',
+    ),
+    projectId: String.fromEnvironment(
+      'PROJECT_ID',
+      defaultValue: 'todolist-flutter-7d3f8',
+    ),
+    storageBucket: String.fromEnvironment(
+      'STORAGE_BUCKET',
+      defaultValue: 'todolist-flutter-7d3f8.firebasestorage.app',
+    ),
+    messagingSenderId: String.fromEnvironment(
+      'MESSAGING_SENDER_ID',
+      defaultValue: '902200913123',
+    ),
+    appId: String.fromEnvironment(
+      'WEB_APP_ID',
+      defaultValue: '1:902200913123:web:f6e503a752fc373919e9d6',
+    ),
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyA1w9wGunc75iapSXXSQ-H5KwgxZMvia6Y',
-    appId: '1:902200913123:android:8120bf40912c70e419e9d6',
-    messagingSenderId: '902200913123',
-    projectId: 'todolist-flutter-7d3f8',
-    storageBucket: 'todolist-flutter-7d3f8.firebasestorage.app',
+    apiKey: String.fromEnvironment(
+      'ANDROID_API_KEY',
+      defaultValue: 'your-android-api-key',
+    ),
+    appId: String.fromEnvironment(
+      'ANDROID_APP_ID',
+      defaultValue: '1:902200913123:android:8120bf40912c70e419e9d6',
+    ),
+    messagingSenderId: String.fromEnvironment(
+      'MESSAGING_SENDER_ID',
+      defaultValue: '902200913123',
+    ),
+    projectId: String.fromEnvironment(
+      'PROJECT_ID',
+      defaultValue: 'todolist-flutter-7d3f8',
+    ),
+    storageBucket: String.fromEnvironment(
+      'STORAGE_BUCKET',
+      defaultValue: 'todolist-flutter-7d3f8.firebasestorage.app',
+    ),
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'your-ios-api-key',
-    appId: 'your-ios-app-id',
-    messagingSenderId: '902200913123',
-    projectId: 'todolist-flutter-7d3f8',
-    storageBucket: 'todolist-flutter-7d3f8.firebasestorage.app',
-    iosBundleId: 'your.ios.bundle.id',
+    apiKey: String.fromEnvironment(
+      'IOS_API_KEY',
+      defaultValue: 'your-ios-api-key',
+    ),
+    appId: String.fromEnvironment(
+      'IOS_APP_ID',
+      defaultValue: 'your-ios-app-id',
+    ),
+    messagingSenderId: String.fromEnvironment(
+      'MESSAGING_SENDER_ID',
+      defaultValue: '902200913123',
+    ),
+    projectId: String.fromEnvironment(
+      'PROJECT_ID',
+      defaultValue: 'todolist-flutter-7d3f8',
+    ),
+    storageBucket: String.fromEnvironment(
+      'STORAGE_BUCKET',
+      defaultValue: 'todolist-flutter-7d3f8.firebasestorage.app',
+    ),
+    iosBundleId: String.fromEnvironment(
+      'IOS_BUNDLE_ID',
+      defaultValue: 'your.ios.bundle.id',
+    ),
   );
 }
