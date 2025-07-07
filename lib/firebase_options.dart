@@ -2,6 +2,12 @@ import 'package:firebase_core/firebase_core.dart' show FirebaseOptions;
 import 'package:flutter/foundation.dart'
     show defaultTargetPlatform, kIsWeb, TargetPlatform;
 
+/// Firebase configuration using environment variables for security.
+///
+/// IMPORTANT: No default values are provided to prevent exposing sensitive data.
+/// All environment variables must be provided via --dart-define or .env file.
+///
+/// Run with: ./run_with_env.bat (Windows) or ./run_with_env.sh (Linux/Mac)
 class DefaultFirebaseOptions {
   static FirebaseOptions get currentPlatform {
     if (kIsWeb) {
@@ -20,79 +26,28 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: String.fromEnvironment(
-      'WEB_API_KEY',
-      defaultValue: 'your-web-api-key',
-    ),
-    authDomain: String.fromEnvironment(
-      'AUTH_DOMAIN',
-      defaultValue: 'todolist-flutter-7d3f8.firebaseapp.com',
-    ),
-    projectId: String.fromEnvironment(
-      'PROJECT_ID',
-      defaultValue: 'todolist-flutter-7d3f8',
-    ),
-    storageBucket: String.fromEnvironment(
-      'STORAGE_BUCKET',
-      defaultValue: 'todolist-flutter-7d3f8.firebasestorage.app',
-    ),
-    messagingSenderId: String.fromEnvironment(
-      'MESSAGING_SENDER_ID',
-      defaultValue: '902200913123',
-    ),
-    appId: String.fromEnvironment(
-      'WEB_APP_ID',
-      defaultValue: '1:902200913123:web:f6e503a752fc373919e9d6',
-    ),
+    apiKey: String.fromEnvironment('WEB_API_KEY'),
+    authDomain: String.fromEnvironment('AUTH_DOMAIN'),
+    projectId: String.fromEnvironment('PROJECT_ID'),
+    storageBucket: String.fromEnvironment('STORAGE_BUCKET'),
+    messagingSenderId: String.fromEnvironment('MESSAGING_SENDER_ID'),
+    appId: String.fromEnvironment('WEB_APP_ID'),
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: String.fromEnvironment(
-      'ANDROID_API_KEY',
-      defaultValue: 'your-android-api-key',
-    ),
-    appId: String.fromEnvironment(
-      'ANDROID_APP_ID',
-      defaultValue: '1:902200913123:android:8120bf40912c70e419e9d6',
-    ),
-    messagingSenderId: String.fromEnvironment(
-      'MESSAGING_SENDER_ID',
-      defaultValue: '902200913123',
-    ),
-    projectId: String.fromEnvironment(
-      'PROJECT_ID',
-      defaultValue: 'todolist-flutter-7d3f8',
-    ),
-    storageBucket: String.fromEnvironment(
-      'STORAGE_BUCKET',
-      defaultValue: 'todolist-flutter-7d3f8.firebasestorage.app',
-    ),
+    apiKey: String.fromEnvironment('ANDROID_API_KEY'),
+    appId: String.fromEnvironment('ANDROID_APP_ID'),
+    messagingSenderId: String.fromEnvironment('MESSAGING_SENDER_ID'),
+    projectId: String.fromEnvironment('PROJECT_ID'),
+    storageBucket: String.fromEnvironment('STORAGE_BUCKET'),
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: String.fromEnvironment(
-      'IOS_API_KEY',
-      defaultValue: 'your-ios-api-key',
-    ),
-    appId: String.fromEnvironment(
-      'IOS_APP_ID',
-      defaultValue: 'your-ios-app-id',
-    ),
-    messagingSenderId: String.fromEnvironment(
-      'MESSAGING_SENDER_ID',
-      defaultValue: '902200913123',
-    ),
-    projectId: String.fromEnvironment(
-      'PROJECT_ID',
-      defaultValue: 'todolist-flutter-7d3f8',
-    ),
-    storageBucket: String.fromEnvironment(
-      'STORAGE_BUCKET',
-      defaultValue: 'todolist-flutter-7d3f8.firebasestorage.app',
-    ),
-    iosBundleId: String.fromEnvironment(
-      'IOS_BUNDLE_ID',
-      defaultValue: 'your.ios.bundle.id',
-    ),
+    apiKey: String.fromEnvironment('IOS_API_KEY'),
+    appId: String.fromEnvironment('IOS_APP_ID'),
+    messagingSenderId: String.fromEnvironment('MESSAGING_SENDER_ID'),
+    projectId: String.fromEnvironment('PROJECT_ID'),
+    storageBucket: String.fromEnvironment('STORAGE_BUCKET'),
+    iosBundleId: String.fromEnvironment('IOS_BUNDLE_ID'),
   );
 }

@@ -2,6 +2,26 @@
 
 Untuk menjaga keamanan API keys dan konfigurasi Firebase, proyek ini menggunakan environment variables.
 
+## Mengapa Tidak Menggunakan Default Values?
+
+❌ **TIDAK AMAN**:
+
+```dart
+apiKey: String.fromEnvironment('API_KEY', defaultValue: 'AIzaSyExample-NEVER-PUT-REAL-API-KEY-HERE')
+```
+
+✅ **AMAN**:
+
+```dart
+apiKey: String.fromEnvironment('API_KEY')
+```
+
+**Alasan:**
+
+- Default values dengan API keys asli tetap terekspos di source code
+- Akan ter-commit ke repository dan bisa dilihat siapa saja
+- Menghilangkan tujuan utama menggunakan environment variables
+
 ## Setup
 
 1. Copy file `.env.example` menjadi `.env`:
